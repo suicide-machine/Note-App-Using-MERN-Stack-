@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: sans-serif;
+  }
+
+  body {
+    background-color: rgb(241, 245, 241);
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .input-box {
+    @apply w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none;
+  }
+
+  .btn-primary {
+    @apply w-full text-sm bg-[#2B85FF] text-white p-2 rounded my-1 hover:bg-blue-700;
+  }
+
+  .icon-btn {
+    @apply text-xl text-slate-300 cursor-pointer hover:text-[#2B85FF];
+  }
+
+  .input-label {
+    @apply text-xs text-slate-400;
+  }
+}
